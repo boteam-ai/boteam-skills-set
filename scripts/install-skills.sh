@@ -153,7 +153,7 @@ install_global_skills() {
   echo "Team commands (/product-team, /clevel) are project-only unless you run:"
   echo "  $(basename "$0") --project /path/to/your-app"
   echo ""
-  echo "HR / hire / weekly cron: run from team repo (${SKILLS_ROOT}) or open it as workspace."
+  echo "HR / hire / weekly cron: run from skills-set repo (${SKILLS_ROOT}) or open it as workspace."
 }
 
 install_project() {
