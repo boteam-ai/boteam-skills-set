@@ -1,0 +1,17 @@
+# Local upstream clones (never commit)
+sources/
+
+# OS / editor
+.DS_Store
+*.swp
+
+# Secrets
+.env
+.env.local
+credentials.json
+
+# Skill-creator eval workspaces
+*-workspace/
+
+# Install backups (local)
+.team-install-backups/

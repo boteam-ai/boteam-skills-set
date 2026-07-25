@@ -1,0 +1,19 @@
+---
+description: Guardrails for boteam-skills-set repository
+globs:
+alwaysApply: true
+---
+
+# boteam-skills-set guardrails
+
+This workspace is the **public skills SSOT** — not a product app repo.
+
+Before creating or editing files:
+
+1. Read [GUARDRAILS.md](../../GUARDRAILS.md).
+2. **In scope:** expert skills, commands, HR rubric, scripts, docs, marketing.
+3. **Out of scope:** product code, secrets, DailyX-style private pipelines, site ops agents.
+4. **Paths:** never hardcode home directories; use repo root / `SKILLS_ROOT`.
+5. **Ship gate:** `validate-skill.sh` → `ship-skill.sh` for global symlink skills.
+
+Product work happens in other repos; consume experts via `~/.cursor/skills/` symlinks.

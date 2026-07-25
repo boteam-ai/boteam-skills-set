@@ -1,0 +1,23 @@
+---
+description: Read project context before implementing. Apply when about to implement a feature, write code, or start a coding task in a product repo that has an AGENTS.md.
+alwaysApply: false
+---
+
+# Context before code
+
+Before writing implementation code in this repo:
+
+1. If `AGENTS.md` exists at the repo root, read its **Project Context** table (runtime,
+   package manager, test/build/lint commands) and its **Known Footguns** table.
+2. If a Known Footgun entry is relevant to the change you are about to make, say so
+   explicitly and avoid repeating it — do not silently work around it without mentioning it.
+3. If `AGENTS.md` does not exist and the repo looks like a real product codebase (has a
+   `package.json`, `pyproject.toml`, `go.mod`, or similar manifest), tell the user once:
+   "This repo has no `AGENTS.md`. Run `scripts/init-project-context.sh` from the team repo
+   to generate one." Do not block on this — proceed with the task.
+4. Do not invent Project Context values from memory. If `AGENTS.md` is missing or stale
+   (e.g. references a command that no longer exists), verify with the actual manifest file
+   before relying on it.
+
+This rule only front-loads context. It does not replace verification — see
+`evidence-before-done.mdc` for what "done" requires after implementing.

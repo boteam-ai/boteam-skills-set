@@ -1,0 +1,29 @@
+---
+description: Require verifiable evidence before claiming a task is done, ready, or QA-passed. Apply when about to report a feature/fix as complete, ready to ship, or QA'd in a product repo.
+alwaysApply: false
+---
+
+# Evidence before done
+
+Never claim a task is "done", "ready", "QA passed", or "looks good" without pasting the
+actual command output that proves it. Self-declared readiness is not evidence.
+
+## Rules
+
+1. **No bare claims.** Do not write "everything is checked" or "should work" without a
+   command's real exit code and output attached.
+2. **Report one of two statuses only:**
+   - `STATUS: DONE` — every relevant command was run and passed. Evidence is attached for each.
+   - `STATUS: BLOCKED` — something failed or could not be verified. State exactly what,
+     with the error output, and what you tried.
+   Never report anything in between as if it were success.
+3. **Prefer running verification yourself first** (project test/build/lint commands from
+   `AGENTS.md` if present) before suggesting the user do it.
+4. **For a second opinion, suggest `/qa-review`** — an independent, read-only check —
+   rather than re-declaring readiness in the same turn you just wrote the code in.
+5. **If you cannot run the verification commands** (no terminal access, missing
+   dependencies, etc.), say so explicitly and mark `STATUS: BLOCKED` — do not guess at
+   the outcome.
+
+This rule governs how "done" is reported. Front-loading the context needed to avoid
+foreseeable bugs in the first place is `context-before-code.mdc`'s job.

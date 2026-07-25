@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" font-family="system-ui,sans-serif">
+  <rect width="920" height="520" fill="#0d1117"/>
+  <text x="460" y="36" fill="#e6edf3" font-size="20" font-weight="600" text-anchor="middle">boteam-skills-set  Skill Tree</text>
+  <text x="460" y="58" fill="#8b949e" font-size="12" text-anchor="middle">15 core experts · solo founder · Cursor + Claude Code</text>
+  <!-- Entry -->
+  <rect x="340" y="72" width="240" height="44" rx="8" fill="#161b22" stroke="#388bfd"/>
+  <text x="460" y="99" fill="#e6edf3" font-size="13" text-anchor="middle">/team · /help-skills · /setup</text>
+  <!-- Strategy -->
+  <rect x="40" y="150" width="200" height="70" rx="6" fill="#161b22" stroke="#3fb950"/>
+  <text x="140" y="178" fill="#3fb950" font-size="11" text-anchor="middle" font-weight="600">Strategy</text>
+  <text x="140" y="198" fill="#c9d1d9" font-size="10" text-anchor="middle">ceo-founder-coach</text>
+  <text x="140" y="212" fill="#c9d1d9" font-size="10" text-anchor="middle">business-model-strategist</text>
+  <!-- Product -->
+  <rect x="260" y="150" width="200" height="90" rx="6" fill="#161b22" stroke="#a371f7"/>
+  <text x="360" y="178" fill="#a371f7" font-size="11" text-anchor="middle" font-weight="600">Product</text>
+  <text x="360" y="198" fill="#c9d1d9" font-size="10" text-anchor="middle">researcher ’ PM ’ UX ’ UI</text>
+  <text x="360" y="218" fill="#8b949e" font-size="9" text-anchor="middle">/product-team</text>
+  <!-- Engineering -->
+  <rect x="480" y="150" width="200" height="70" rx="6" fill="#161b22" stroke="#f0883e"/>
+  <text x="580" y="178" fill="#f0883e" font-size="11" text-anchor="middle" font-weight="600">Engineering</text>
+  <text x="580" y="198" fill="#c9d1d9" font-size="10" text-anchor="middle">full-stack · ai-apps</text>
+  <text x="580" y="212" fill="#8b949e" font-size="9" text-anchor="middle">’ /qa-review</text>
+  <!-- GTM -->
+  <rect x="700" y="150" width="200" height="90" rx="6" fill="#161b22" stroke="#db6d28"/>
+  <text x="800" y="178" fill="#db6d28" font-size="11" text-anchor="middle" font-weight="600">GTM</text>
+  <text x="800" y="198" fill="#c9d1d9" font-size="10" text-anchor="middle">cmo · growth · seo</text>
+  <text x="800" y="212" fill="#c9d1d9" font-size="10" text-anchor="middle">social · sales · copy</text>
+  <text x="800" y="228" fill="#8b949e" font-size="9" text-anchor="middle">/mkt-team · /bip</text>
+  <!-- Meta + Quality -->
+  <rect x="120" y="290" width="320" height="64" rx="6" fill="#161b22" stroke="#8b949e"/>
+  <text x="280" y="316" fill="#8b949e" font-size="11" text-anchor="middle" font-weight="600">Meta / Org</text>
+  <text x="280" y="336" fill="#c9d1d9" font-size="10" text-anchor="middle">hr-evaluator · hire · hr-review · clevel</text>
+  <rect x="480" y="290" width="320" height="64" rx="6" fill="#161b22" stroke="#8b949e"/>
+  <text x="640" y="316" fill="#8b949e" font-size="11" text-anchor="middle" font-weight="600">Quality</text>
+  <text x="640" y="336" fill="#c9d1d9" font-size="10" text-anchor="middle">qa-review · refine · lesson · bip · headline</text>
+  <!-- Workflows -->
+  <rect x="80" y="390" width="760" height="100" rx="8" fill="#161b22" stroke="#388bfd" stroke-dasharray="4"/>
+  <text x="460" y="416" fill="#388bfd" font-size="12" text-anchor="middle" font-weight="600">Founder Workflows (docs/workflows/)</text>
+  <text x="460" y="442" fill="#c9d1d9" font-size="10" text-anchor="middle">validate-idea ’ ship-mvp ’ price-and-launch ’ first-10-customers ’ build-in-public</text>
+  <text x="460" y="468" fill="#8b949e" font-size="10" text-anchor="middle">github.com/boteam-ai/boteam-skills-set</text>
+  <!-- Lines from entry -->
+  <line x1="460" y1="116" x2="140" y2="150" stroke="#30363d"/>
+  <line x1="460" y1="116" x2="360" y2="150" stroke="#30363d"/>
+  <line x1="460" y1="116" x2="580" y2="150" stroke="#30363d"/>
+  <line x1="460" y1="116" x2="800" y2="150" stroke="#30363d"/>
+</svg>
