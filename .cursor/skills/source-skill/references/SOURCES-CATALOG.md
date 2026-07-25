@@ -59,7 +59,7 @@ Last updated: 2026-06-30
 | `/sales-bizdev` | claude-skills (cold-email, business-growth, commercial) | Steli Efti, Aaron Ross, Chris Voss, April Dunford |
 | `/copywriter` | claude-skills (copywriting, content-humanizer, email-sequence) | Joanna Wiebe, Eugene Schwartz, David Ogilvy, Harry Dry |
 | `/hr-evaluator` | awesome-skills (EVALUATION_REPORT); claude-skills (self-improving-agent) | Andy Grove, YC partner review discipline |
-| `/team` | Aggregates all above | — |
+| `/boteam` | Aggregates all above | — |
 | `/source-skill` | This catalog | — |
 | `/bip` | claude-skills (x-twitter-growth, social-content); humanizer (MIT, bundled pass) | Pieter Levels, Marc Lou, Justin Welsh |
 | `/headline` | newsjack (`headline-generator`) | David Ogilvy, Eugene Schwartz, Joanna Wiebe, John Caples |

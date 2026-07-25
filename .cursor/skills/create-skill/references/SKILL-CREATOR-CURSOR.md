@@ -19,7 +19,7 @@ cd ${SKILLS_ROOT}
 Example output:
 
 ```
-SKILL_MD=/Users/.../.cursor/plugins/.../skill-creator/skills/skill-creator/SKILL.md
+SKILL_MD=~/.cursor/plugins/.../skill-creator/skills/skill-creator/SKILL.md
 PLUGIN_ROOT=...
 SCRIPTS=.../scripts
 EVAL_VIEWER=.../eval-viewer/generate_review.py

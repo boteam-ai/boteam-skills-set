@@ -28,7 +28,7 @@ New core experts need:
 
 ## PR checklist
 
-- [ ] No `/Users/` or personal paths
+- [ ] No home-directory or personal paths
 - [ ] No product app code
 - [ ] `validate-repo.sh` passes
 - [ ] CHANGELOG.md updated under `[Unreleased]` for user-visible changes

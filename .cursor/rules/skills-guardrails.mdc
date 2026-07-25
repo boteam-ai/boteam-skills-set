@@ -12,8 +12,10 @@ Before creating or editing files:
 
 1. Read [GUARDRAILS.md](../../GUARDRAILS.md).
 2. **In scope:** expert skills, commands, HR rubric, scripts, docs, marketing.
-3. **Out of scope:** product code, secrets, DailyX-style private pipelines, site ops agents.
+3. **Out of scope:** product code, secrets, private automation pipelines, site-ops agents.
 4. **Paths:** never hardcode home directories; use repo root / `SKILLS_ROOT`.
-5. **Ship gate:** `validate-skill.sh` → `ship-skill.sh` for global symlink skills.
+5. **Entry command:** `/boteam` (not `/team`).
+6. **Ship gate:** `validate-skill.sh` → `ship-skill.sh` for global symlink skills.
+7. **Release gate:** `./scripts/validate-repo.sh` (sensitive-content audit).
 
 Product work happens in other repos; consume experts via `~/.cursor/skills/` symlinks.

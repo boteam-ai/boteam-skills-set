@@ -17,7 +17,7 @@ disable-model-invocation: true
 
 ## Purpose
 
-Wire a **product repo** (not team HQ) into the one-person-company expert system:
+Wire a **product repo** (not this skills-set repo) into the one-person-company expert system:
 
 - **Global:** all team skills via `~/.cursor/skills/` (every Cursor project)
 - **Project-only:** slash commands, QA rules, `AGENTS.md` (context + footguns live here)
@@ -27,7 +27,7 @@ Does **not** duplicate skills into `.cursor/skills/` when global links already e
 ## Resolve target
 
 1. **Path:** user argument, else the active workspace root (`git rev-parse --show-toplevel` or cwd).
-2. **Block team HQ:** if target is `${SKILLS_ROOT}`, stop and tell the user `/setup` is for product repos only.
+2. **Block skills-set repo:** if target is `${SKILLS_ROOT}`, stop and tell the user `/setup` is for product repos only.
 
 ## Run setup (always execute the script)
 
@@ -76,7 +76,7 @@ Do not hand-roll individual install steps unless the script fails — then diagn
 
 ## Rules
 
-1. Never run `/setup` against `${SKILLS_ROOT}` — org HQ is out of scope.
+1. Never run `/setup` against `${SKILLS_ROOT}` — this repo is org layer, not a product.
 2. Never commit secrets; only `.env.example` belongs in git.
 3. If global skills were missing, mention that `--global` ran once — all future projects benefit.
 4. If the user already has duplicate `.cursor/skills/` in the project from an old install, mention they can remove them when global is complete (optional cleanup, not automatic).

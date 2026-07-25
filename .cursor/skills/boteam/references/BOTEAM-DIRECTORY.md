@@ -31,4 +31,4 @@ Last synced: 2026-06-24 · 15 active
 
 ## Team commands
 - `/product-team` · `/mkt-team` · `/growth-team` · `/clevel`
-- `/hire-expert` · `/hr-review` · `/team` · `/source-skill` · `/log-expert-use` · `/distill-to-team`
+- `/hire-expert` · `/hr-review` · `/boteam` · `/source-skill` · `/log-expert-use` · `/distill-to-team`

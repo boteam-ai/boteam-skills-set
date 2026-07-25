@@ -29,7 +29,7 @@ Parses `<Browser>, <Product/Target>`. Browser defaults to **Chrome**.
 
 ### Not the same as `demo` suffix
 
-Commands like `/help-skills demo` or `/team demo` use **Demo Output Mode** — English, redacted catalog text for screen recording. They do **not** start video capture. See `team/.cursor/references/DEMO-SUFFIX.md`.
+Commands like `/help-skills demo` or `/boteam demo` use **Demo Output Mode** — English, redacted catalog text for screen recording. They do **not** start video capture. See `.cursor/references/DEMO-SUFFIX.md`.
 
 ## Output
 

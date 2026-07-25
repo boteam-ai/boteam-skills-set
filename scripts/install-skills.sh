@@ -149,7 +149,7 @@ install_global_skills() {
     link_skill "$name" "${GLOBAL_CLAUDE_SKILLS}/${name}" "$BACKUP_CLAUDE"
   done
   echo ""
-  echo "Done. Skills available in every Cursor project and Claude Code via /slash (e.g. /team, /product-manager)."
+  echo "Done. Skills available in every Cursor project and Claude Code via /slash (e.g. /boteam, /product-manager)."
   echo "Team commands (/product-team, /clevel) are project-only unless you run:"
   echo "  $(basename "$0") --project /path/to/your-app"
   echo ""

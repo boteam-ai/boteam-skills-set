@@ -2,6 +2,14 @@
 
 All notable changes to **boteam-skills-set** are documented here.
 
+## [1.0.1] - 2026-07-25
+
+### Changed
+
+- **`/team` → `/boteam`** — entry command and skill renamed for public branding
+- Expanded `./scripts/validate-repo.sh` sensitive-content audit
+- Removed `.env.example` (no credentials templates in public repo)
+
 ## [1.0.0] - 2026-07-25
 
 ### Added
@@ -11,9 +19,5 @@ All notable changes to **boteam-skills-set** are documented here.
 - **Platform skills**: `/setup`, `/qa-review`, `/refine`, `/lesson`, `/bip`, `/headline`
 - **Skill tree** docs, 5 founder workflows, marketing launch kit
 - **Scripts**: `install-skills.sh`, `ship-skill.sh`, `validate-repo.sh`, `setup-project.sh`
-- **Optional extras** under `.cursor/skills/_extras/` (demo, product-demo, obs)
 
-### Notes
-
-- Extracted from private team HQ v1.0.0; DailyX, bob, and boteam ops agents excluded.
-- Upstream attribution: see [docs/attribution.md](docs/attribution.md).
+See [docs/attribution.md](docs/attribution.md) for upstream sources.

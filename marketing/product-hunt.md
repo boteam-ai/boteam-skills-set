@@ -14,7 +14,7 @@ Built this because I was drowning in generic prompts while wearing every hat. Ea
 
 **Screenshots checklist**
 
-1. `/team` roster output
+1. `/boteam` roster output
 2. docs/skill-tree.svg diagram
 3. Workflow page (validate-idea)
 4. Terminal: install-skills.sh success

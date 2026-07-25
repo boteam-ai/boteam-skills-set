@@ -61,7 +61,7 @@ If the user names one expert (e.g. "product-manager 的来源"), filter §3 of t
 - Always show **URL + stars + license** for every open-source repo listed.
 - Flag **no LICENSE** repos as "仅参考，不复制原文".
 - Do not invent sources; if catalog is stale, say so and offer to run weekly radar.
-- Cross-link: `/team` for roster, `/hire-expert` to add new sourced experts.
+- Cross-link: `/boteam` for roster, `/hire-expert` to add new sourced experts.
 
 ## Maintenance
 

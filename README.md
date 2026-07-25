@@ -24,7 +24,7 @@ chmod +x scripts/*.sh
 ./scripts/install-skills.sh --global --shipped-only
 ```
 
-Restart Cursor, then type **`/team`** in any project.
+Restart Cursor, then type **`/boteam`** in any project.
 
 Wire slash commands into a product repo:
 

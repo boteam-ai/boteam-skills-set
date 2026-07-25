@@ -157,7 +157,7 @@ Read [references/PLATFORM-FORMATS.md](references/PLATFORM-FORMATS.md) for limits
 - LinkedIn: line breaks between short paragraphs; optional bullet block for lessons
 - `ship-log`: markdown file suitable for README changelog or newsletter paste
 
-Do **not** publish — deliver copy only. User runs `/publish-x` or posts manually.
+Do **not** publish — deliver copy only. User posts manually or uses their own tooling.
 
 ---
 
@@ -205,7 +205,7 @@ Reply in English. Structure:
 
 **Suggested media:** {screenshot, demo GIF, diff stat — or "none needed"}
 
-**Next steps:** Publish as-is · `/publish-x` (if DailyX draft exists) · re-run `/bip …` with a different focus
+**Next steps:** Publish as-is · re-run `/bip …` with a different focus
 ```
 
 For **thread** format, show numbered tweets inside the 发布文案 block.
@@ -213,14 +213,13 @@ For **long article**, use a collapsible-style header `### X Article draft` then 
 
 ---
 
-## Hand-offs
+## Handoffs
 
 | Need | Skill |
 |------|-------|
 | Social strategy / calendar | `/social-media-manager` |
 | Copy polish only (no BIP mining) | `/copywriter` |
-| Publish DailyX draft to X API | `/publish-x` |
-| Weekly signal article | `/daily-newsletter-article` |
+| Headline options for launch | `/headline` |
 
 ## Provenance
 

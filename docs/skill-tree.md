@@ -1,6 +1,6 @@
 # Skill tree — boteam-skills-set
 
-Canonical map of experts, utilities, and handoffs. Summon with `/team` or `/help-skills`.
+Canonical map of experts, utilities, and handoffs. Summon with `/boteam` or `/help-skills`.
 
 ![Skill tree](assets/skill-tree.svg)
 
@@ -8,7 +8,7 @@ Canonical map of experts, utilities, and handoffs. Summon with `/team` or `/help
 
 | Slash | Purpose |
 |-------|---------|
-| `/team` | Full roster + division of labor |
+| `/boteam` | Full roster + division of labor |
 | `/help-skills` | Skill tree index + when to use what |
 | `/setup` | Wire a product repo (commands, QA rules, AGENTS.md) |
 

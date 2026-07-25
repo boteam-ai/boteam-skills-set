@@ -29,7 +29,7 @@ git clone https://github.com/boteam-ai/boteam-skills-set.git
 cd boteam-skills-set
 ./scripts/install-skills.sh --global --shipped-only
 ```
-Then in any project: /team
+Then in any project: /boteam
 
 **Post 6 (workflow)**  
 Validate an idea in 3 commands:  

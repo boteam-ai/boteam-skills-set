@@ -6,7 +6,7 @@
 | Sec | Screen | Action / narration |
 |-----|--------|-------------------|
 | 0–10 | Terminal | Clone repo, run `./scripts/install-skills.sh --global --shipped-only` |
-| 10–20 | Cursor chat | Type `/team` — scroll the five layers |
+| 10–20 | Cursor chat | Type `/boteam` — scroll the five layers |
 | 20–35 | docs/skill-tree.md | Highlight researcher → PM → CEO flow |
 | 35–50 | Cursor chat | `/researcher` — "validate demand for X" (quick output) |
 | 50–65 | Cursor chat | `/product-manager` — MVP cut list |
@@ -15,5 +15,5 @@
 
 **Recording tips**
 
-- Use `/team demo` for English public-safe roster
+- Use `/boteam demo` for English public-safe roster
 - Hide personal paths; repo uses SKILLS_ROOT not hardcoded home dirs

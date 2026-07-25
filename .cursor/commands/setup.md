@@ -4,7 +4,7 @@ Wire a **product repository** into the one-person-company expert system: global 
 skills (if missing), project slash commands, QA rules, and `AGENTS.md` with auto-detected
 Project Context. Skips duplicating skills into the project when global links already exist.
 
-**Not for the team HQ repo** (`${SKILLS_ROOT}`) — that is org layer, not a product.
+**Not for the skills-set repo** (`${SKILLS_ROOT}`) — that is org layer, not a product.
 
 ## Usage
 
@@ -19,7 +19,7 @@ Project Context. Skips duplicating skills into the project when global links alr
 ## Execution
 
 1. Load [`.cursor/skills/setup/SKILL.md`](../skills/setup/SKILL.md).
-2. Resolve the target product repo path (never team HQ).
+2. Resolve the target product repo path (never this skills-set repo).
 3. Run:
 
 ```bash

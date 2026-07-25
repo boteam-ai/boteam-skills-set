@@ -1,6 +1,6 @@
 ---
-name: team
-description: Lists the full one-person-company expert team roster, division of labor by layer, and how to summon each expert or team. Use when the user types /team, /team demo, or asks who is on the team, expert roles, org chart, or how to call product/marketing/engineering experts.
+name: boteam
+description: Lists the full one-person-company expert team roster, division of labor by layer, and how to summon each expert or team. Use when the user types /boteam, /boteam demo, or asks who is on the team, expert roles, org chart, or how to call product/marketing/engineering experts.
 disable-model-invocation: true
 ---
 
@@ -14,8 +14,8 @@ When invoked, output the **complete expert team directory** with division of lab
 
 | Trigger | Mode |
 |---------|------|
-| `/team`, `/team <question>` | Default — English, live ROSTER scores |
-| `/team demo`, `team demo` | **Demo output** — English, redacted, no scores |
+| `/boteam`, `/boteam <question>` | Default — English, live ROSTER scores |
+| `/boteam demo`, `boteam demo` | **Demo output** — English, redacted, no scores |
 
 Demo redaction rules: [../../references/DEMO-SUFFIX.md](../../references/DEMO-SUFFIX.md)
 
@@ -23,18 +23,18 @@ Demo redaction rules: [../../references/DEMO-SUFFIX.md](../../references/DEMO-SU
 
 1. [../../../hr/ROSTER.md](../../../hr/ROSTER.md) — current roster, scores, status (canonical).
 2. [../../../README.md](../../../README.md) — summon commands and team groupings.
-3. If paths fail (e.g. skill used outside team repo), use [references/TEAM-DIRECTORY.md](references/TEAM-DIRECTORY.md) as fallback and note that scores may be stale.
+3. If paths fail (e.g. skill used outside this repo), use [references/BOTEAM-DIRECTORY.md](references/BOTEAM-DIRECTORY.md) as fallback and note that scores may be stale.
 
 Skills-set repo root (for HR/ops): git root or `SKILLS_ROOT` env var
 
 ## Output format (use every time)
 
-Print exactly this structure in Chinese:
+Print exactly this structure in **English** (user asks for 中文 → use Chinese labels but keep slash names):
 
 ```markdown
-# 一人公司 AI 专家团队
+# Solo Founder AI Expert Team
 
-**状态摘要:** <从 ROSTER 读取 active/probation/retired 数量>
+**Status:** <active/probation/retired counts from ROSTER>
 
 ---
 
@@ -85,37 +85,31 @@ Print exactly this structure in Chinese:
 | 命令 | 用途 |
 |------|------|
 | `/hire-expert` | 招募新专家（巨人肩膀流程） |
-| `/hr-review` | 全员考核（建议在 team 仓库执行） |
+| `/hr-review` | Full roster review (run from skills-set repo) |
 | `/source-skill` | 权威来源：开源库 + thought leaders + 许可 |
 | `/log-expert-use` | 轻量记录专家调用（日常） |
 | `/distill-to-team` | 提炼方法论 → `methodology/` |
 
 ---
 
-## 组织状态（可选附录）
-
-读取 `ops/executions/index.json` 最近 **3** 条 + `CHANGELOG.md` `[Unreleased]` 摘要，附在目录末尾（「最近组织动态」）。
-
----
-
-## 快速选用
+## Quick routing
 
 - 定本周做什么 → `/ceo-founder-coach`
 - 做什么功能 → `/product-manager` 或 `/product-team`
 - 写代码 → `/full-stack-engineer`
 - 怎么卖 → `/cmo` 或 `/mkt-team`
-- 看全员 → `/team`（本命令）
+- 看全员 → `/boteam`（本命令）
 ```
 
-After the table, add **one line**: how many experts are `active` and remind that `/hr-review` runs best from the team repo.
+After the table, add **one line**: how many experts are `active` and remind that `/hr-review` runs best from the skills-set repo.
 
 ---
 
-## Demo output (`/team demo`)
+## Demo output (`/boteam demo`)
 
 **English only.** Read ROSTER for expert names and slugs; **omit scores, dates, source columns, and ops appendix.**
 
-Do **not** print `Team repo root`, execution logs, or CHANGELOG.
+Do **not** print repo root paths, execution logs, or CHANGELOG.
 
 Use this structure:
 
@@ -174,7 +168,7 @@ Use this structure:
 | `/hire-expert` | Recruit a new expert (sourcing + rubric) |
 | `/hr-review` | Full team evaluation cycle |
 | `/source-skill` | Authoritative sources catalog |
-| `/team` | This directory |
+| `/boteam` | This directory |
 ```
 
 Fill rows from live ROSTER; keep **Status** as `Active` only (no numeric scores).

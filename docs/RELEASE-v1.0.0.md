@@ -16,6 +16,10 @@ Strategy · Product · Engineering · GTM · HR meta — each with SKILL + SOUL 
 
 `/setup` · `/qa-review` · `/refine` · `/lesson` · `/bip` · `/headline` · `/help-skills`
 
+### Entry command
+
+**`/boteam`** — full expert roster and division of labor.
+
 ### Docs
 
 - [Skill tree](docs/skill-tree.md)
@@ -31,11 +35,7 @@ chmod +x scripts/*.sh
 ./scripts/install-skills.sh --global --shipped-only
 ```
 
-Then `/team` in any Cursor or Claude Code session.
-
-## Excluded (private HQ only)
-
-DailyX newsletter pipeline, bob site ops, ship-boteam — remain in private team HQ v1.0.0.
+Then **`/boteam`** in any Cursor or Claude Code session.
 
 ## Attribution
 

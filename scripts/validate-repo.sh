@@ -18,27 +18,51 @@ CORE_EXPERTS=(
   hr-evaluator
 )
 
+FORBIDDEN_DIRS=(DailyX digest-skill-workspace)
+FORBIDDEN_SKILLS=(bob ship-boteam daily-newsletter tune-newsletter publish-x digest-skill)
+
+# Patterns that must not appear in public repo content (exclude this script's own definitions)
+SENSITIVE_PATTERNS=(
+  '/Users/puma'
+  '/Users/'
+  'DailyX'
+  'publish-x'
+  'daily-newsletter'
+  'ship-boteam'
+  'boteam.ai'
+  'private team HQ'
+  'private HQ'
+)
+
 echo "=== validate-repo (boteam-skills-set) ==="
 
-# Forbidden paths / dirs
-for forbidden in DailyX digest-skill-workspace bob ship-boteam daily-newsletter; do
-  if [[ -e "$forbidden" ]] || [[ -d ".cursor/skills/${forbidden}" ]]; then
-    err "Forbidden artifact present: ${forbidden}"
-  fi
-done
-ok "No forbidden private artifacts at root/skills"
+# Legacy skill/command names must not exist
+[[ -d .cursor/skills/team ]] && err "Legacy skill dir .cursor/skills/team — use boteam"
+[[ -f .cursor/commands/team.md ]] && err "Legacy command team.md — use boteam.md"
+[[ -f .cursor/skills/boteam/SKILL.md ]] || err "Missing .cursor/skills/boteam/SKILL.md"
+[[ -f .cursor/commands/boteam.md ]] || err "Missing .cursor/commands/boteam.md"
+ok "boteam skill + command present (no legacy team)"
 
-# No personal path leaks
-leak_files=$(grep -rl '/Users/puma' . \
-  --include='*.md' --include='*.sh' --include='*.mdc' --include='*.yml' \
-  --exclude-dir='.git' 2>/dev/null || true)
-if [[ -n "$leak_files" ]]; then
-  while IFS= read -r f; do
-    [[ -z "$f" ]] && continue
-    err "Personal path leak: $f"
-  done <<< "$leak_files"
-else
-  ok "No /Users/puma path leaks"
+for forbidden in "${FORBIDDEN_DIRS[@]}"; do
+  [[ -e "$forbidden" ]] && err "Forbidden directory: ${forbidden}"
+done
+for slug in "${FORBIDDEN_SKILLS[@]}"; do
+  [[ -d ".cursor/skills/${slug}" ]] && err "Forbidden skill: ${slug}"
+done
+ok "No forbidden private artifacts"
+
+# Sensitive string audit (skip this script to avoid self-match on pattern list)
+while IFS= read -r -d '' f; do
+  [[ "$f" == "./scripts/validate-repo.sh" ]] && continue
+  for pat in "${SENSITIVE_PATTERNS[@]}"; do
+    if grep -qF "$pat" "$f" 2>/dev/null; then
+      err "Sensitive pattern '${pat}' in ${f#./}"
+    fi
+  done
+done < <(find . -type f \( -name '*.md' -o -name '*.mdc' -o -name '*.sh' -o -name '*.yml' -o -name '*.json' -o -name '.env.example' \) ! -path './.git/*' -print0)
+
+if [[ "$FAIL" -eq 0 ]]; then
+  ok "No sensitive patterns in tracked content"
 fi
 
 # Required governance
@@ -61,12 +85,17 @@ done
 ok "Core experts four-piece + Handoffs + shipped"
 
 # Org skills must ship
-ORG_SKILLS=(team help-skills source-skill create-skill ship-skill setup qa-review refine lesson bip headline psych-levers awareness-framing)
+ORG_SKILLS=(boteam help-skills source-skill create-skill ship-skill setup qa-review refine lesson bip headline psych-levers awareness-framing)
 for slug in "${ORG_SKILLS[@]}"; do
   [[ -f ".cursor/skills/${slug}/SKILL.md" ]] || err "Org skill missing: ${slug}"
   [[ -f ".cursor/skills/${slug}/.shipped" ]] || err "Org skill not shipped: ${slug}"
 done
 ok "Org/platform skills present and shipped"
+
+# boteam must be invokable as /boteam
+if ! grep -q '/boteam' .cursor/skills/boteam/SKILL.md; then
+  err "boteam/SKILL.md missing /boteam invoke documentation"
+fi
 
 # Validate each shipped skill frontmatter
 for d in .cursor/skills/*/; do

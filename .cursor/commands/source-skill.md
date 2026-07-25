@@ -8,4 +8,4 @@
 2. 若用户指定专家 slug（如 `product-manager`），只输出该专家一行 + 其 `SOURCES.md` 摘要。
 3. 按 `source-skill/SKILL.md` 的输出格式呈现；必须包含许可与署名规则。
 
-相关：`/team` 看全员分工 · `/hire-expert` 招募时必须登记新来源到此 catalog。
+相关：`/boteam` 看全员分工 · `/hire-expert` 招募时必须登记新来源到此 catalog。

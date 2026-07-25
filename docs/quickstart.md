@@ -21,7 +21,7 @@ This symlinks **shipped** skills to:
 Open any Cursor chat and type:
 
 ```
-/team
+/boteam
 ```
 
 You should see the full expert roster.

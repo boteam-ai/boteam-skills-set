@@ -15,7 +15,7 @@ Utility skill (not a full expert). Distilled from team social/copy stack + human
 |--------|----------------|
 | `/social-media-manager` | Build-in-public principles, Levels/Lou/Welsh voice |
 | `/copywriter` | Hook and clarity patterns |
-| `/publish-x` | Optional publish step after draft review |
+| `/headline` | Launch headline candidates |
 
 ## Thought leaders
 

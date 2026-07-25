@@ -30,5 +30,5 @@ Summarize **recent coding and product progress from this chat**, extract shareab
 ## Related
 
 - `/social-media-manager` — strategy and calendar
-- `/publish-x` — publish DailyX draft via API
+- `/headline` — hook options
 - `/copywriter` — polish only

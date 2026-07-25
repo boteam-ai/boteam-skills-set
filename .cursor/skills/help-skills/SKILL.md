@@ -28,7 +28,7 @@ When invoked, output a **condensed skill tree** — do not dump every SKILL.md.
 **Full map:** docs/skill-tree.md
 
 ## Entry
-/team · /help-skills · /setup
+/boteam · /help-skills · /setup
 
 ## Strategy
 /ceo-founder-coach · /business-model-strategist

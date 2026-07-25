@@ -17,7 +17,7 @@ This repo is the **public SSOT** for solo-founder AI expert skills — not a pro
 
 - Product application code (ship in your app repo)
 - Secrets, `.env` values, customer data
-- Private newsletter pipelines (DailyX), site ops agents (bob)
+- Private site-ops or newsletter automation pipelines
 - Raw upstream clones (`sources/` — local only, gitignored)
 
 ## SSOT workflow
@@ -31,6 +31,8 @@ boteam-skills-set/.cursor/skills/<name>/   ← edit here
 ~/.claude/skills/<name>  ──┴→ symlinks only (no real copies)
 ```
 
+Entry command: **`/boteam`** — full expert roster.
+
 ## Quality bar (core experts)
 
 - `SKILL.md` ≤ ~200 lines; depth in `references/`
@@ -38,6 +40,8 @@ boteam-skills-set/.cursor/skills/<name>/   ← edit here
 - `## Handoffs` section with clear next-expert routing
 - Ship gate: `./scripts/validate-skill.sh <name>` then `./scripts/ship-skill.sh <name>`
 
-## Contributing
+## Public audit
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Utility skills welcome via PR; new **core experts** need SOURCES + HR rubric review.
+Run `./scripts/validate-repo.sh` before every release — blocks personal paths, private project names, and legacy `/team` artifacts.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
