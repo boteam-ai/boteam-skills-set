@@ -2,6 +2,13 @@
 
 All notable changes to **boteam-skills-set** are documented here.
 
+## [1.0.2] - 2026-08-06
+
+### Added
+
+- **`/chrome-web-store-asset-generator`** — GTM utility for Chrome Web Store listing assets (thin install; [canonical repo](https://github.com/boteam-ai/chrome-web-store-asset-generator))
+- Workflow: [docs/workflows/ship-chrome-extension.md](docs/workflows/ship-chrome-extension.md)
+
 ## [1.0.1] - 2026-07-25
 
 ### Changed

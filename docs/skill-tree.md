@@ -55,8 +55,11 @@ Canonical map of experts, utilities, and handoffs. Summon with `/boteam` or `/he
 | Headlines | `/headline` | News-style headline candidates |
 | Psych levers | `/psych-levers` | Five-lever persuasion sequence |
 | Awareness | `/awareness-framing` | Schwartz five awareness levels |
+| CWS assets | `/chrome-web-store-asset-generator` | Chrome Web Store screenshots + promo tiles ([canonical repo](https://github.com/boteam-ai/chrome-web-store-asset-generator)) |
 
 **Flow:** `/cmo` → `/content-seo-strategist` → `/bip` → `/social-media-manager`
+
+**Chrome extension launch:** [ship-chrome-extension.md](workflows/ship-chrome-extension.md) — copywriter → CWS assets → `/qa-review`
 
 ## Layer 5 — Meta (org loop)
 
@@ -94,6 +97,7 @@ See [workflows/](workflows/) for step-by-step playbooks:
 3. [price-and-launch.md](workflows/price-and-launch.md)
 4. [first-10-customers.md](workflows/first-10-customers.md)
 5. [build-in-public.md](workflows/build-in-public.md)
+6. [ship-chrome-extension.md](workflows/ship-chrome-extension.md)
 
 ## Optional extras
 

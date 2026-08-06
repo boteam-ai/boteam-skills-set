@@ -41,7 +41,7 @@ Details: [docs/quickstart.md](docs/quickstart.md)
 | **Strategy** | `/ceo-founder-coach` · `/business-model-strategist` |
 | **Product** | `/researcher` · `/product-manager` · `/ux-designer` · `/ui-brand-designer` |
 | **Engineering** | `/full-stack-engineer` · `/ai-application-engineer` |
-| **GTM** | `/cmo` · `/growth-hacker` · `/content-seo-strategist` · `/social-media-manager` · `/sales-bizdev` · `/copywriter` |
+| **GTM** | `/cmo` · `/growth-hacker` · `/content-seo-strategist` · `/social-media-manager` · `/sales-bizdev` · `/copywriter` · [`/chrome-web-store-asset-generator`](https://github.com/boteam-ai/chrome-web-store-asset-generator) |
 | **Meta** | `/hr-evaluator` + `/hire-expert` · `/hr-review` · `/clevel` |
 | **Quality** | `/qa-review` · `/refine` · `/lesson` · `/bip` · `/headline` |
 
@@ -56,6 +56,17 @@ Full map: **[docs/skill-tree.md](docs/skill-tree.md)** · Index: **`/help-skills
 | [Price & launch](docs/workflows/price-and-launch.md) | biz model → CMO → copywriter |
 | [First 10 customers](docs/workflows/first-10-customers.md) | sales → growth → CEO coach |
 | [Build in public](docs/workflows/build-in-public.md) | bip → headline → social |
+| [Ship Chrome extension](docs/workflows/ship-chrome-extension.md) | copywriter → CWS assets → qa-review |
+
+## Standalone skill packages
+
+Some utilities ship with a **full demo repo** (not bundled in this clone):
+
+| Skill | Canonical repo |
+|-------|----------------|
+| `/chrome-web-store-asset-generator` | [boteam-ai/chrome-web-store-asset-generator](https://github.com/boteam-ai/chrome-web-store-asset-generator) |
+
+Thin copy installs with `./scripts/install-skills.sh`; clone the canonical repo for demo preview + PNG export.
 
 ## Team bundles
 

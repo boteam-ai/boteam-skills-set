@@ -42,6 +42,7 @@ When invoked, output a **condensed skill tree** — do not dump every SKILL.md.
 ## GTM
 /cmo · /growth-hacker · /content-seo-strategist · /social-media-manager
 /sales-bizdev · /copywriter · /bip · /headline
+/chrome-web-store-asset-generator (CWS listing assets)
 
 ## Org
 /hire-expert · /hr-review · /clevel · /hr-evaluator
@@ -50,7 +51,7 @@ When invoked, output a **condensed skill tree** — do not dump every SKILL.md.
 /product-team · /mkt-team · /growth-team · /clevel
 
 ## Workflows (docs/workflows/)
-validate-idea · ship-mvp · price-and-launch · first-10-customers · build-in-public
+validate-idea · ship-mvp · price-and-launch · first-10-customers · build-in-public · ship-chrome-extension
 ```
 
 If the user asks **which skill for X**, answer in **3 lines max** with one primary slash + one handoff.
