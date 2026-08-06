@@ -78,7 +78,7 @@ Map each `assetMap` entry to a layout `type`:
 | `hero` | First slide / main value prop | Title top + centered window |
 | `workflow` | Process / how-it-works | Text left + tilted mockup right |
 | `feature` | Single power feature | Centered zoom + spotlight |
-| `checklist` | 2 related screens (e.g. post + reply checklist) | Dual windows side-by-side |
+| `checklist` | 2 related screens on one slide | Dual windows side-by-side |
 | `trust` | Settings, privacy, CTA finale | CTA stack + 1–2 setting screenshots |
 | `context` | In-page / before-after | Comparison or browser chrome mockup |
 

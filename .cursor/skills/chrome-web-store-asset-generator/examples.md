@@ -46,18 +46,15 @@ Please confirm:
 
 ---
 
-## assetMap example (fictional extension "DraftFlow")
+## assetMap example (generic Chrome extension)
 
 ```js
 export const assetMap = [
   { slideId: '01', type: 'hero', role: 'Main value prop', files: ['01-hero-main-ui.png'], layout: 'single' },
-  { slideId: '02', type: 'workflow', role: 'Highlight-only reply', files: ['02-highlight-reply.png'], layout: 'single' },
-  { slideId: '03', type: 'feature', role: 'Angle picker', files: ['03-angle-picker.png'], layout: 'single' },
-  { slideId: '04', type: 'workflow', role: 'Save inspirations', files: ['04-save-inspirations.png'], layout: 'single' },
-  { slideId: '05', type: 'workflow', role: 'Create from library', files: ['05-create-panel.png'], layout: 'single' },
-  { slideId: '06', type: 'feature', role: 'Post assistant', files: ['06-post-assistant.png'], layout: 'single' },
-  { slideId: '07', type: 'checklist', role: 'Optimization checklist', files: ['07-checklist-post.png', '07-checklist-reply.png'], layout: 'dual' },
-  { slideId: '08', type: 'trust', role: 'Settings + tracking', files: ['08-settings.png', '08-tracking.png'], layout: 'stacked' },
+  { slideId: '02', type: 'workflow', role: 'Core workflow', files: ['02-core-flow.png'], layout: 'single' },
+  { slideId: '03', type: 'feature', role: 'Power feature', files: ['03-feature-detail.png'], layout: 'single' },
+  { slideId: '07', type: 'checklist', role: 'Dual feature screens', files: ['07-screen-a.png', '07-screen-b.png'], layout: 'dual' },
+  { slideId: '08', type: 'trust', role: 'Settings + privacy', files: ['08-settings.png'], layout: 'single' },
 ];
 ```
 
@@ -66,15 +63,15 @@ export const assetMap = [
 ## Phase 3 — Copy proposal excerpt
 
 ```markdown
-### Slide 07 — Optimization Checklist
-Assets: `07-checklist-post.png` + `07-checklist-reply.png`
+### Slide 07 — Dual-image feature
+Assets: `07-screen-a.png` + `07-screen-b.png`
 
 | | Variant A | Variant B | Variant C |
 |---|-----------|-----------|-----------|
-| Kicker | Before you post | Optimization Checklist | Quality gate |
-| Headline | Optimize before you publish | Score drafts against your playbook | Fix weak drafts before they go live |
-| Subline | Post and reply checklists flag gaps in your draft. | Playbook rules for Post + Reply modes. | Actionable fixes — one tap to Optimize. |
-| Pills | Post + Reply · Actionable fixes · One-tap Optimize | Playbook rules · Both modes · Optimize | Checklist · Post mode · Reply mode |
+| Kicker | Two views | Side by side | Dual screens |
+| Headline | See both modes at once | Compare workflows | One slide, two proofs |
+| Subline | Post and reply checklists in one frame. | Show related screens without extra slides. | Pair screens that tell one story. |
+| Pills | Dual layout · Same copy lock · Export once | Side-by-side · 1280×800 · CWS ready | Two files · One slide ID |
 
 Which variant for Slide 07? You can mix fields across A/B/C or paste your own.
 ```
