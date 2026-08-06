@@ -4,11 +4,11 @@
 
 Same approved copy + assetMap applied to each theme.
 
-### Style A — Apple Pro Minimalist
+### Style A — Clean Minimal
 
 - **Canvas:** `#000000`–`#0A0D14` or `#F5F5F7`
-- **Elements:** Frosted glass, macOS window frames, soft radial flares
-- **Typography:** SF-style system sans, silver/white headings
+- **Elements:** Frosted glass, rounded desktop-style window frames, soft radial flares
+- **Typography:** System sans, silver/white headings
 
 ```js
 export const themeA = {
@@ -19,11 +19,11 @@ export const themeA = {
 };
 ```
 
-### Style B — Cyber / Modern SaaS
+### Style B — Neon Tech
 
 - **Canvas:** `#030712` + subtle grid + neon glows (cyan / indigo)
 - **Elements:** Glowing borders, sharp geometry, uppercase micro-badges
-- **Typography:** Inter / Geist, vivid accent colors
+- **Typography:** Modern sans, vivid accent colors
 
 ```js
 export const themeB = {
@@ -34,11 +34,11 @@ export const themeB = {
 };
 ```
 
-### Style C — Editorial Studio
+### Style C — Warm Editorial
 
 - **Canvas:** `#FAF8F5` or warm dark `#141413`
 - **Elements:** Soft stone shadows, generous whitespace, serif headings
-- **Typography:** Newsreader + Hanken Grotesk / Inter body
+- **Typography:** Editorial serif + clean sans body
 
 ```js
 export const themeC = {
@@ -51,7 +51,7 @@ export const themeC = {
 
 ### Style D — Bold Contrast
 
-- **Canvas:** Split or full `#0F0F0F` with high-contrast accent blocks (`#FF4D00` or product rust accent if provided)
+- **Canvas:** Split or full `#0F0F0F` with high-contrast accent blocks (`#FF4D00` or product accent if provided)
 - **Elements:** Large typographic headlines, hard dividers, minimal decoration, strong CTA blocks
 - **Typography:** Bold geometric sans, oversized headlines, mono kickers
 
@@ -109,12 +109,12 @@ After Phase 4, optionally persist:
 ```js
 export const assetMap = [
   {
-    slideId: '01',           // used in export: style-a-slide-01-1280x800.png
-    type: 'hero',            // layout component
-    role: 'Hero — reply angles',  // human label for copy proposal
-    files: ['1 AI Auto Generate Reply Angles.png'],  // original filenames
-    publicPaths: ['/assets/raw/1.png'],              // paths in preview app
-    layout: 'single',        // single | dual | stacked
+    slideId: '01',
+    type: 'hero',
+    role: 'Hero — main value prop',
+    files: ['01-hero-main-ui.png'],
+    publicPaths: ['/assets/raw/1.png'],
+    layout: 'single',
   },
 ];
 ```

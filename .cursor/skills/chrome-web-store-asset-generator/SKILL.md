@@ -183,10 +183,10 @@ cws-assets-preview/
 
 | Package | Name | Vibe |
 |---------|------|------|
-| A | Apple Pro Minimalist | Clean Apple product page |
-| B | Cyber / Modern SaaS | Linear / Vercel energy |
-| C | Editorial Studio | Stripe / Notion warmth |
-| D | Bold Contrast | High-contrast dark/light split, strong typographic hierarchy |
+| A | Clean Minimal | Frosted glass, dark/light canvas, soft flares |
+| B | Neon Tech | Grid canvas, neon glows, sharp geometry |
+| C | Warm Editorial | Warm neutrals, serif headings, soft shadows |
+| D | Bold Contrast | High-contrast type, accent blocks, strong CTAs |
 
 Apply the same **approved copy** and **assetMap** to all 4 packages. Theme tokens: [reference.md](reference.md).
 
@@ -203,7 +203,7 @@ Each card: `data-export-filename` attribute for batch export.
 
 Tab bar:
 
-- `[ Style A: Apple Pro ]` `[ Style B: Cyber SaaS ]` `[ Style C: Editorial Studio ]` `[ Style D: Bold Contrast ]` `[ Promo Tiles ]`
+- `[ Style A: Clean Minimal ]` `[ Style B: Neon Tech ]` `[ Style C: Warm Editorial ]` `[ Style D: Bold Contrast ]` `[ Promo Tiles ]`
 
 Run `npm install && npm run dev` — verify all assets render.
 
@@ -226,7 +226,7 @@ Provide to user:
 **Exports:** `cws-assets-preview/export/` (run `npm run export:batch` to refresh)
 
 **Slide IDs:** 01–0N — see `src/assetMap.js`
-**Styles:** A (Apple Pro) · B (Cyber SaaS) · C (Editorial) · D (Bold Contrast)
+**Styles:** A (Clean Minimal) · B (Neon Tech) · C (Warm Editorial) · D (Bold Contrast)
 
 **Request a tweak:** cite `style-b-slide-04` + change copy and/or swap asset filename.
 ```
